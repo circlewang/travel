@@ -4,7 +4,7 @@
         热销推荐
     </div>
     <ul>
-        <li class="item border-bottom" v-for="item in recommendList" :key="item.id">
+        <li class="item border-bottom" v-for="item in list" :key="item.id">
             <div class="item-img-wrapper">
                 <img class="item-img" :src="item.imgUrl">
             </div>
@@ -21,30 +21,8 @@
 <script>
 export default {
     name:'HomeRecommend',
-    data(){
-        return{
-            recommendList:[{
-                id:'0001',
-                imgUrl:'http://img1.qunarzz.com/sight/p0/1508/12/4e6170303c63bdb7070fb1987480afab.water.jpg_200x200_0775a71c.jpg',
-                title:'杭州极地海洋世界',
-                desc:'你的司机那次 i 啊纠结反复'
-            },{
-                id:'0002',
-                imgUrl:'http://img1.qunarzz.com/sight/p0/1508/12/4e6170303c63bdb7070fb1987480afab.water.jpg_200x200_0775a71c.jpg',
-                title:'杭州极地海洋世界',
-                desc:'你的司机那次 i 啊纠结反复'
-            },{
-                id:'0003',
-                imgUrl:'http://img1.qunarzz.com/sight/p0/1508/12/4e6170303c63bdb7070fb1987480afab.water.jpg_200x200_0775a71c.jpg',
-                title:'杭州极地海洋世界',
-                desc:'你的司机那次 i 啊纠结反复'
-            },{
-                id:'0004',
-                imgUrl:'http://img1.qunarzz.com/sight/p0/1508/12/4e6170303c63bdb7070fb1987480afab.water.jpg_200x200_0775a71c.jpg',
-                title:'杭州极地海洋世界',
-                desc:'你的司机那次 i 啊纠结反复'
-            }]
-        }
+    props:{
+        list:Array
     }
 }
 </script>
