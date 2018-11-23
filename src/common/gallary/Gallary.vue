@@ -63,5 +63,5 @@ export default {
                 width:100%
             .swiper-pagination
                 color:#fff
-                bottom:-4rem
+                bottom:-1rem
 </style>
