@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .warn-dialog{
+            width: 100%;
+            height: 100%;
+            top:0;
+            left: 0;
+            position: fixed;
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .warn-content{
+            width: 400px;
+            height:200px;
+            top:50%;
+            left:50%;
+            transform: translate(-50%,-50%);
+            background: #fff;
+            border-radius: 10px;
+            z-index:99;
+            position: absolute;
+        }
+        .warn-content .warn-close{
+            float: right;
+            margin:10px 10px 0 0 ;
+        }
+        .warn-content .warn-close .close-img{
+            width: 25px;
+            cursor: pointer;
+        }
+        .title-name{
+            border-bottom: 1px solid #ccc;
+            background-color: rgb(233, 214, 108);
+            padding: 10px 15px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+            font-size: 18px;
+            box-sizing: border-box;
+        }
+        .content-info{
+            text-align: center;
+            padding: 15px;
+        }
+        .warn-btns{
+            margin-top: 20px;
+            text-align: center;
+        }
+        .warn-btns .btn-sure{
+            border-radius: 5px;
+            background: #808080;
+            padding: 5px 10px;
+            display: inline-block;
+            color:#fff;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="warn-dialog">
+        <div class="warn-content">
+            <div class="warn-close">
+                <img class="close-img sureCloseDialog"  src="close-dialog.png">
+            </div>
+            <div class="warn-title">
+                <div class="title-name">通知</div>
+                <div class="content-info">今晚7点－12点系统升级，升级期间系统将会停止服务，请大家知悉。</div>
+            </div>
+            <div class="warn-btns">
+                <div class="btn-sure sureCloseDialog">确定</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
